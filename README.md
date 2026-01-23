@@ -1,6 +1,6 @@
 # Telecom Churn Prediction
 
-
+![Logo](images/logoproject.png)
 # 1. Description
 Este projeto aplica técnicas de Ciência de Dados e Machine Learning para analisar e prever o comportamento de rotatividade (Churn) em uma empresa de telecomunicações. Utilizando dados históricos, o objetivo é identificar padrões que antecedem o cancelamento de contratos, permitindo ações preventivas estratégicas.
 
