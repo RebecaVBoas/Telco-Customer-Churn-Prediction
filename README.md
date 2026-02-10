@@ -1,7 +1,7 @@
 #### Em desenvolvimento
 # Telecom Churn Prediction
 
-![Logo](images/newlogo.jpg)
+![Logo](images/new_logo.png)
 # 1. Description
 * Este é um projeto de ciência de dados de ponta a ponta (end-to-end) que utiliza algoritmos de Machine Learning para prever a probabilidade de um cliente cancelar os serviços de uma empresa de telecomunicações (Churn). O projeto aborda um problema de aprendizado supervisionado para classificação binária, onde o objetivo é identificar clientes de alto risco (Target = 1) antes que a evasão ocorra.
 * A implementação seguiu rigorosas etapas de análise e engenharia. Inicialmente, foi realizada uma Análise Exploratória de Dados (EDA) profunda para identificar os principais churn drivers, como tipo de contrato, tecnologia de internet e tempo de casa (tenure).
