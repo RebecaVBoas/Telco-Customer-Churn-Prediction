@@ -77,3 +77,53 @@ Pipiline de resolução usado no projeto(baseado no CRISPIM-DM)
   *  9. Implantação (deploy).
 
 
+## 5. Main Business Insights
+
+Nesta etapa, consolidamos as descobertas mais relevantes da Análise Exploratória de Dados (EDA), focando nos fatores que mais influenciam a evasão de clientes.
+
+### 1. O Perfil de Risco: Novos Clientes e Contratos Mensais
+A análise revelou que o Churn não é distribuído de forma uniforme, existindo um "período crítico" de retenção logo após a adesão.
+
+* **Tenure (Tempo de Casa):** Apresenta uma correlação negativa moderada de **-0.35** com o Churn. Isso indica que clientes com menos tempo de casa são estatisticamente mais propensos a sair.
+  > ![Análise de Tenure e Churn](images/tenure_churn_distribuicao.png)
+> *Figura 1: Gráficos de dispersão mostrando a concentração de Churn (em vermelho) em clientes com baixo Tenure.*
+
+* **Tipo de Contrato:** Clientes com contratos mês a mês (**Month-to-month**) possuem uma taxa de evasão drasticamente superior aos de contratos anuais, sendo o principal preditor de rotatividade.
+
+
+
+---
+
+### 2. O Paradoxo da Tecnologia e Preço
+Embora a tecnologia de Fibra Óptica ofereça velocidades superiores, ela é um dos principais vetores de cancelamento no cenário atual.
+
+* **Fibra Óptica:** Usuários desta tecnologia apresentam taxas de Churn mais elevadas, possivelmente devido ao alto ticket médio (**Monthly Charges**).
+* **Custo Mensal:** Existe uma correlação positiva de **0.20** entre o valor da fatura e o cancelamento. Clientes que pagam faturas mais caras, especialmente no início do relacionamento, representam o grupo de maior risco.
+
+> ![Relacionamento entre Cobranças e Churn](image_8461a4.jpg)
+> *Figura 2: Dispersão de MonthlyCharges evidenciando a sensibilidade ao preço no grupo de Churn.*
+
+---
+
+### 3. Fatores de Fidelização (Âncoras de Retenção)
+Identificamos serviços que funcionam como barreiras de saída, reduzindo significativamente a probabilidade de um cliente abandonar a empresa.
+
+* **Suporte Técnico e Segurança:** Clientes que utilizam **TechSupport** e **DeviceProtection** apresentam taxas de Churn significativamente menores em comparação aos que não possuem esses serviços.
+* **Dependência Familiar:** Clientes com parceiros e dependentes tendem a ser mais estáveis, apresentando menor incidência de cancelamento.
+* **Neutralidade do Streaming:** Serviços como **StreamingTV** e **StreamingMovies** não impactam drasticamente a probabilidade de Churn, funcionando mais como conveniência do que como âncora de fidelidade.
+
+> ![Proporção de Churn por Serviços Adicionais](image_eefee7.png)
+> *Figura 3: Comparativo do impacto de serviços de valor agregado na retenção.*
+
+---
+
+### 4. Atrito em Pagamentos e Público Sênior
+Determinados comportamentos de faturamento e perfis demográficos exigem atenção estratégica imediata.
+
+* **Método de Pagamento:** O pagamento via **Electronic Check** apresenta a maior taxa de evasão entre todas as formas de pagamento disponíveis.
+* **Senior Citizens:** A taxa de evasão entre idosos é quase o dobro da média da base, sugerindo possíveis dificuldades com acessibilidade ou falta de planos adequados a esse perfil.
+
+> ![Distribuição de Churn para Cidadãos Idosos](image_eefee7.png)
+> *Figura 4: Proporção elevada de Churn no segmento SeniorCitizen.*
+
+
