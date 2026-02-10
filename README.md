@@ -3,7 +3,14 @@
 
 ![Logo](images/newlogo.jpg)
 # 1. Description
-Este projeto aplica técnicas de Ciência de Dados e Machine Learning para analisar e prever o comportamento de rotatividade (Churn) em uma empresa de telecomunicações. Utilizando dados históricos, o objetivo é identificar padrões que antecedem o cancelamento de contratos, permitindo ações preventivas estratégicas.
+* Este é um projeto de ciência de dados de ponta a ponta (end-to-end) que utiliza algoritmos de Machine Learning para prever a probabilidade de um cliente cancelar os serviços de uma empresa de telecomunicações (Churn). O projeto aborda um problema de aprendizado supervisionado para classificação binária, onde o objetivo é identificar clientes de alto risco (Target = 1) antes que a evasão ocorra.
+* A implementação seguiu rigorosas etapas de análise e engenharia. Inicialmente, foi realizada uma Análise Exploratória de Dados (EDA) profunda para identificar os principais churn drivers, como tipo de contrato, tecnologia de internet e tempo de casa (tenure).
+* Para aproximar o projeto de um fluxo de trabalho real de mercado, a solução foi estruturada de forma modular. O desenvolvimento foi dividido em componentes responsáveis por:
+Ingestão e Limpeza: Tratamento de dados ausentes e correção de tipos.
+Engenharia de Atributos (Feature Engineering): Transformação de variáveis categóricas via Encoding e normalização de variáveis numéricas.
+Treinamento e Avaliação: Pipeline automatizado para testes de diferentes algoritmos (como Random Forest ou XGBoost) e otimização de hiperparâmetros.
+* O projeto foi desenvolvido utilizando boas práticas de programação, incluindo o uso de ambientes virtuais para isolamento de dependências, tratamento de exceções, e geração de logs para monitoramento. O objetivo final é entregar não apenas um modelo, mas um sistema escalável que possa ser consumido por outras áreas de negócio para estratégias de retenção proativa.
+
 
 # 2. Technologies and Tools
 Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Jupyter Notebook / Google Colab
