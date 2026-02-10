@@ -113,7 +113,7 @@ Identificamos serviços que funcionam como barreiras de saída, reduzindo signif
 * **Dependência Familiar:** Clientes com parceiros e dependentes tendem a ser mais estáveis, apresentando menor incidência de cancelamento.
 * **Neutralidade do Streaming:** Serviços como **StreamingTV** e **StreamingMovies** não impactam drasticamente a probabilidade de Churn, funcionando mais como conveniência do que como âncora de fidelidade.
 
-> ![Proporção de Churn por Serviços Adicionais](image_eefee7.png)
+> ![Proporção de Churn por Serviços Adicionais](images/proporcao_de_churn_por_servios_adc.png)
 > *Figura 3: Comparativo do impacto de serviços de valor agregado na retenção.*
 
 ---
