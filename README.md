@@ -54,3 +54,26 @@ Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, Jupyter Notebook / Goo
 O objetivo final do projeto é que o modelo preveja a **probabilidade** de um cliente deixar a operadora. Essa abordagem é mais vantajosa do que a classificação binária simples (que indica apenas se o cliente vai ou não sair), pois permite verificar quais clientes têm alta probabilidade de cancelamento e separá-los em grupos (Clusterização de Risco).
 
 Dessa forma, é possível concentrar esforços nos segmentos mais críticos, identificando clientes que precisam apenas de monitoramento, aqueles que exigem ações imediatas e os que não necessitam desse tipo de atenção.
+
+### 4. Solution Pipiline 
+Pipiline de resolução usado no projeto(baseado no CRISPIM-DM)
+
+  *  1. Definir o problema de negócio.
+
+  * 2. Coletar os dados e obter uma visão geral deles.
+
+  * 3. Dividir os dados em conjuntos de treino e teste.
+
+  * 4. Explorar os dados (Análise Exploratória de Dados – EDA).
+
+  * 5. Engenharia de atributos, limpeza e pré-processamento dos dados.
+
+  * 6. Treinamento dos modelos, comparação, seleção de atributos e ajuste de hiperparâmetros.
+
+  * 7. Teste final do modelo em produção e avaliação.
+
+  *  8. Conclusão e interpretação dos resultados do modelo.
+
+  *  9. Implantação (deploy).
+
+
