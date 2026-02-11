@@ -100,7 +100,7 @@ Embora a tecnologia de Fibra Óptica ofereça velocidades superiores, ela é um 
 * **Fibra Óptica:** Usuários desta tecnologia apresentam taxas de Churn mais elevadas, possivelmente devido ao alto ticket médio (**Monthly Charges**).
 * **Custo Mensal:** Existe uma correlação positiva de **0.20** entre o valor da fatura e o cancelamento. Clientes que pagam faturas mais caras, especialmente no início do relacionamento, representam o grupo de maior risco.
 
-> ![Relacionamento entre Cobranças e Churn](images/monthy_churn_distribuicao.png)
+> ![Relacionamento entre Cobranças e Churn](images/dispersao_monthy.png)
 > 
 > *Figura 2: Dispersão de MonthlyCharges evidenciando a sensibilidade ao preço no grupo de Churn.*
 
