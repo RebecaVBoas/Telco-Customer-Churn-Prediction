@@ -86,7 +86,7 @@ A análise revelou que o Churn não é distribuído de forma uniforme, existindo
 
 * **Tenure (Tempo de Casa):** Apresenta uma correlação negativa moderada de **-0.35** com o Churn. Isso indica que clientes com menos tempo de casa são estatisticamente mais propensos a sair.
   > ![Análise de Tenure e Churn](images/tenure_churn_distribuicao.png)
-> *Figura 1: Gráficos de dispersão mostrando a concentração de Churn (em vermelho) em clientes com baixo Tenure.*
+> *Figura 1: Gráficos de dispersão mostrando a concentração de Churn (em amarelo) em clientes com baixo Tenure.*
 
 * **Tipo de Contrato:** Clientes com contratos mês a mês (**Month-to-month**) possuem uma taxa de evasão drasticamente superior aos de contratos anuais, sendo o principal preditor de rotatividade.
 
