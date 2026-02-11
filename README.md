@@ -124,7 +124,7 @@ Determinados comportamentos de faturamento e perfis demográficos exigem atenç�
 * **Método de Pagamento:** O pagamento via **Electronic Check** apresenta a maior taxa de evasão entre todas as formas de pagamento disponíveis.
 * **Senior Citizens:** A taxa de evasão entre idosos é quase o dobro da média da base, sugerindo possíveis dificuldades com acessibilidade ou falta de planos adequados a esse perfil.
 
-> ![Distribuição de Churn para Cidadãos Idosos](image_eefee7.png)
+> ![Distribuição de Churn para Cidadãos Idosos](images/churn_senior_citizen.png)
 > *Figura 4: Proporção elevada de Churn no segmento SeniorCitizen.*
 
 
