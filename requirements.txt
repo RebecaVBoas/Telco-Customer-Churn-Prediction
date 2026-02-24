@@ -57,6 +57,7 @@ nbformat==5.10.4
 nest-asyncio==1.6.0
 notebook_shim==0.2.4
 numpy==2.4.2
+nvidia-nccl-cu12==2.29.3
 packaging==26.0
 pandas==3.0.1
 pandocfilters==1.5.1
@@ -103,3 +104,4 @@ wcwidth==0.6.0
 webcolors==25.10.0
 webencodings==0.5.1
 websocket-client==1.9.0
+xgboost==3.2.0
