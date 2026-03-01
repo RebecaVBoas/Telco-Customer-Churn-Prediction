@@ -17,7 +17,7 @@ def evaluate_models(X, y, models, n_splits=5, random_state=42):
     scoring = ['accuracy', 'precision', 'recall', 'f1', 'roc_auc']
 
     for name, model in models.items():
-        print(f"🚀 Avaliando {name}...")
+        print(f"Avaliando {name}...")
         
         cv_results = cross_validate(
             model, X, y, 
