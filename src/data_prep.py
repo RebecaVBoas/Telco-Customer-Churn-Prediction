@@ -54,6 +54,7 @@ class ChurnTransformer:
         
         df = pd.concat([df.drop(self.one_hot_features, axis=1), df_encoded], axis=1)
         
+        
         df[self.numerical_features] = self.scaler.transform(df[self.numerical_features])
         
         return df
