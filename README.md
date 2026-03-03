@@ -126,5 +126,40 @@ Determinados comportamentos de faturamento e perfis demográficos exigem atenç�
 
 > ![Distribuição de Churn para Cidadãos Idosos](images/churn_senior_citizen.png)
 > *Figura 4: Proporção elevada de Churn no segmento SeniorCitizen.*
+>
+### 6. Modelagem e Otimização
+
+* Nesta etapa, implementei um Pipeline do Scikit-Learn para integrar de forma robusta as fases de limpeza, engenharia de atributos e preparação dos dados. Para o modelo de Regressão Logística, apliquei one-hot encoding às variáveis categóricas e Standard Scaling às numéricas. Esta padronização é fundamental, pois modelos lineares são sensíveis à escala dos dados devido aos seus algoritmos de otimização baseados em gradiente. 
+
+* Um ponto determinante foi a inclusão das variáveis criadas na etapa de Feature Engineering, como **Is_Price_Shock** e **Security_Svc_Count**, desenhadas para capturar comportamentos específicos de risco e fidelidade.
+
+* Para a seleção do estimador, comparei modelos lineares e baseados em árvores (como **XGBoost** e **Random Forest**) utilizando validação cruzada k-fold estratificada, focando nas métricas de Recall e ROC-AUC. Dado que o objetivo de negócio é minimizar a perda de clientes, a acurácia foi descartada por ser pouco informativa em dados desbalanceados. 
+
+* A Regressão Logística superou os modelos de conjunto (ensemble), oferecendo não apenas uma performance competitiva, mas uma interpretabilidade superior, fator crítico para a confiança estratégica da operação.
+
+* Realizei o ajuste de hiperparâmetros através do GridSearchCV, explorando diferentes forças de regularização ($C$) e tipos de penalidade ($L1$ e $L2$). Um ponto decisivo foi a configuração do parâmetro `class_weight='balanced'`, que permitiu ao modelo aprender com maior eficácia os padrões da classe minoritária (churn). 
+
+* O modelo final otimizado apresentou uma performance excelente: um Recall de **0.82** indica que identificamos corretamente 82% dos clientes que pretendiam cancelar. Na prática, observando a matriz de confusão, o modelo previu com sucesso **305 dos 374 cancelamentos reais**.
+
+---
+
+## Desempenho do Modelo Final
+
+| Métrica     | Valor |
+|------------|--------|
+| Recall     | 0.82   |
+| ROC-AUC    | 0.84   |
+| Precisão   | 0.50   |
+| F1-Score   | 0.62   |
+| Acurácia   | 0.75   |
+
+* Diferente de modelos de "caixa-preta", a Regressão Logística permitiu interpretar diretamente os coeficientes, confirmando que os resultados são coerentes e reforçam os insights da Análise Exploratória (EDA). É perceptível que valores elevados de **MonthlyCharges** e o serviço de **Fibra Ótica** têm um impacto positivo direto na probabilidade de cancelamento. 
+
+* Por outro lado, variáveis como **Tenure** (tempo de casa) e a variável customizada **Security_Svc_Count** apresentam coeficientes negativos robustos, agindo como fatores de retenção. O modelo confirma que, quanto mais serviços de segurança o cliente possui, menor é o seu risco de evasão.
+
+* O projeto demonstra alto valor estratégico ao oferecer uma base sólida para ações de retenção. O custo de oferecer um benefício a um cliente (Falso Positivo) é significativamente menor que o prejuízo da perda total do contrato e o custo necessário para a aquisição de um novo cliente (CAC).
+
+* O próximo passo é o deployment do pipeline completo, permitindo a geração automatizada de listas de alertas de risco.
+
 
 
